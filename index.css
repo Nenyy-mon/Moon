@@ -1,0 +1,52 @@
+body {
+  background-image: url("./assets/unnamed.png");
+  background-position: fixed;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  backdrop-filter: blur(2px);
+}
+.all {
+  background-color: rgba(0, 0, 0, 0.429);
+}
+.moonbar,
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+a {
+  width: fit-content !important;
+  height: fit-content !important;
+}
+.moons {
+  width: 20%;
+  transition: 10s;
+}
+.moons:hover {
+  transform: rotateZ(360deg);
+}
+.song {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.song p {
+  width: 50%;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 200;
+}
+span {
+  font-size: 0.3em !important;
+}
+@media (max-width: 680px) {
+  .song p {
+    font-size: 0.9em;
+    width: 80%;
+  }
+}
